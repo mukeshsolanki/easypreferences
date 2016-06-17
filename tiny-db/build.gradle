@@ -4,8 +4,8 @@ ext {
   bintrayName = 'Tiny-DB'
 
   publishedGroupId = 'com.mukesh'
-  libraryName = 'tiny-db'
-  artifact = 'tiny-db'
+  libraryName = 'tinydb'
+  artifact = 'tinydb'
 
   libraryDescription = 'This class simplifies calls to SharedPreferences in a line of code. It can also do more like: saving a list of strings, integers and saving images. All in 1 line of code!'
 
