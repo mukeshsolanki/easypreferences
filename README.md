@@ -25,5 +25,10 @@ Okay seems like you integrated the library in your project but **how do you use 
  
  tinyDB.putString(key,value); //Save's a string value in your preferences
  tinyDB.putInt(key,value); //Save's a int value in your preferences
+ 
+ 
+ //use that instance to retrieve data
+ tinyDB.getString(key); //retrives the data from preferences or default values if it does not exists 
+ tinyDB.getBoolean(key); //retrives the data from preferences or default values if it does not exists
 ```
 That's pretty much it. Looks like your all done here.
