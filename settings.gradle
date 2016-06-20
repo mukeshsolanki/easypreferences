@@ -1,1 +1,1 @@
-include ':app', ':tiny-db'
+include ':app', ':tinydb'
