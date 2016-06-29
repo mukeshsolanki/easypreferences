@@ -6,7 +6,7 @@ This class simplifies calls to SharedPreferences in a line of code. It can also 
 
 ## How to integrate into your app?
 Integrating the library into you app is extremely easy. A few changes in the build gradle and your all ready to use TinyDB. Make the following changes to build.gradle inside you app.
-```java
+```groovy
 .....
 dependencies {
   ...
@@ -17,7 +17,7 @@ dependencies {
 ## How to use the library?
 Okay seems like you integrated the library in your project but **how do you use it**? Well its really easy just follow the steps below.
 
-```
+```java
  //Create a new instance of TinyDB
  TinyDB tinyDB=new TinyDB(appContext);
  
