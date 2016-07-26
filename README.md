@@ -1,3 +1,5 @@
+[ ![Download](https://api.bintray.com/packages/mukeshsolanki/maven/tinydb/images/download.svg) ](https://bintray.com/mukeshsolanki/maven/tinydb/_latestVersion)
+
 # Android-Shared-Preferences
 
 Based on kcochibili's TinyDB (https://github.com/kcochibili/TinyDB--Android-Shared-Preferences-Turbo)
