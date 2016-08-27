@@ -290,37 +290,9 @@ public class TinyDB {
     return newList;
   }
 
-  /**
-   * Get Arraylist of Objects from SharedPreferences at 'key'
-   *
-   * @param 	key 	SharedPreferences key
-   * @param 	mClass 	Class of the stored object
-   * @return 			Stored ArrayList of Objects
-   */
   public ArrayList<Object> getListObject(String key, Class<?> mClass) {
-    return getListObject(key, mClass, new Gson());
-  }
+    Gson gson = new Gson();
 
-  /**
-   * Get Objects from SharedPreferences at 'key'
-   *
-   * @param 	key 		SharedPreferences key
-   * @param 	classOfT 	Class of the stored object
-   * @return 				Stored Object
-   */  
-  public Object getObject(String key, Class<?> classOfT) {
-    return getObject(key, classOfT, new Gson());
-  }
-  
-  /**
-   * Get Arraylist of Objects from SharedPreferences at 'key'
-   *
-   * @param 	key 	SharedPreferences key
-   * @param 	mClass 	Class of the stored object
-   * @param		gson	custom Gson object
-   * @return 			Stored ArrayList of Objects
-   */  
-  public ArrayList<Object> getListObject(String key, Class<?> mClass, Gson gson) {
     ArrayList<String> objStrings = getListString(key);
     ArrayList<Object> objects = new ArrayList<Object>();
 
@@ -331,22 +303,14 @@ public class TinyDB {
     return objects;
   }
 
-  /**
-   * Get Objects from SharedPreferences at 'key'
-   *
-   * @param 	key 		SharedPreferences key
-   * @param 	classOfT 	Class of the stored object
-   * @param		gson	custom Gson object
-   * @return 				Stored Object
-   */    
-  public Object getObject(String key, Class<?> classOfT, Gson gson) {
+  public Object getObject(String key, Class<?> classOfT) {
+
     String json = getString(key);
-    Object value = gson.fromJson(json, classOfT);
+    Object value = new Gson().fromJson(json, classOfT);
     if (value == null) throw new NullPointerException();
     return value;
   }
-  
-  
+
   // Put methods
 
   /**
@@ -480,27 +444,14 @@ public class TinyDB {
    * @param obj is the Object you want to put
    */
   public void putObject(String key, Object obj) {
-	  putObject(key, obj, new Gson());
-  }
-
-  public void putListObject(String key, ArrayList<Object> objArray) {
-	  putListObject(key, objArray, new Gson());
-  }
-
-  /**
-   * Put ObJect any type into SharedPrefrences with 'key' and save
-   *
-   * @param key SharedPreferences key
-   * @param obj is the Object you want to put
-   * @param gson custom Gson object
-   */
-  public void putObject(String key, Object obj, Gson gson) {
     checkForNullKey(key);
+    Gson gson = new Gson();
     putString(key, gson.toJson(obj));
   }
 
-  public void putListObject(String key, ArrayList<Object> objArray, Gson gson) {
+  public void putListObject(String key, ArrayList<Object> objArray) {
     checkForNullKey(key);
+    Gson gson = new Gson();
     ArrayList<String> objStrings = new ArrayList<String>();
     for (Object obj : objArray) {
       objStrings.add(gson.toJson(obj));
@@ -508,15 +459,6 @@ public class TinyDB {
     putListString(key, objStrings);
   }
 
-  /**
-   * Remove SharedPreferences item with 'key'
-   *
-   * @param key SharedPreferences key
-   */
-  public boolean contains(String key) {
-    return preferences.contains(key);
-  }
-  
   /**
    * Remove SharedPreferences item with 'key'
    *
