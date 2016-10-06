@@ -1,4 +1,5 @@
 [ ![Download](https://api.bintray.com/packages/mukeshsolanki/maven/tinydb/images/download.svg) ](https://bintray.com/mukeshsolanki/maven/tinydb/_latestVersion)
+[ ![PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg) ](https://www.paypal.me/mukeshsolanki)
 
 # Android-Shared-Preferences
 
