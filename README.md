@@ -5,7 +5,7 @@
   <a href="http://android-arsenal.com/details/1/3805"> <https://img.shields.io/badge/Android%20Arsenal-Android--Shared--Preferences-brightgreen.svg?style=flat" /></a>
   <a href="https://travis-ci.org/mukeshsolanki/Android-Shared-Preferences-TinyDB-"> <img src="https://travis-ci.org/mukeshsolanki/Android-Shared-Preferences-TinyDB-.svg?branch=master" /></a>
   <a href="https://www.paypal.me/mukeshsolanki"> <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" /></a>
-  <br />
+  <br /><br />
   Based on kcochibili's TinyDB (https://github.com/kcochibili/TinyDB--Android-Shared-Preferences-Turbo). This class simplifies calls to SharedPreferences in a line of code. It can also do more like: saving a list of strings, integers and saving object and lists. All in 1 line of code!
 </p>
 
