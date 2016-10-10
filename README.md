@@ -1,7 +1,7 @@
 <h1 align="center">Android Shared Preferences</h1>
 <p align="center">
   [![API](https://img.shields.io/badge/API-9%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=9)
-  [![](https://jitpack.io/v/mukeshsolanki/App-Runtime-Permissions-Android.svg)](https://jitpack.io/#mukeshsolanki/Android-Shared-Preferences-TinyDB-)
+  [![](https://jitpack.io/v/mukeshsolanki/Android-Shared-Preferences-TinyDB-.svg)](https://jitpack.io/#mukeshsolanki/Android-Shared-Preferences-TinyDB-)
   [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android--Shared--Preferences-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3805)
   [![Build Status](https://travis-ci.org/mukeshsolanki/Android-Shared-Preferences-TinyDB-.svg?branch=master)](https://travis-ci.org/mukeshsolanki/Android-Shared-Preferences-TinyDB-)
   [![PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg) ](https://www.paypal.me/mukeshsolanki)
