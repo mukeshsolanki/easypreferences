@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Android-shared-preferences-tinydb- by mukeshsolanki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Android-shared-preferences-tinydb-</h1>
+      <h2 class="project-tagline">This class simplifies calls to SharedPreferences in a line of code. It can also do more like: saving a list of strings, integers and saving images. All in 1 line of code!</h2>
+      <a href="https://github.com/mukeshsolanki/Android-Shared-Preferences-TinyDB-" class="btn">View on GitHub</a>
+      <a href="https://github.com/mukeshsolanki/Android-Shared-Preferences-TinyDB-/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/mukeshsolanki/Android-Shared-Preferences-TinyDB-/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1 align="center">
+<a id="android-shared-preferences" class="anchor" href="#android-shared-preferences" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android Shared Preferences</h1>
+
+<p align="center">
+  <a href="https://android-arsenal.com/api?level=9"> <img src="https://img.shields.io/badge/API-9%2B-blue.svg?style=flat"></a>
+  <a href="https://jitpack.io/#mukeshsolanki/Android-Shared-Preferences-TinyDB-"> <img src="https://jitpack.io/v/mukeshsolanki/Android-Shared-Preferences-TinyDB-.svg"></a>
+  <a href="http://android-arsenal.com/details/1/3805"> <img src="https://img.shields.io/badge/Android%20Arsenal-Android--Shared--Preferences-brightgreen.svg?style=flat"></a>
+  <a href="https://travis-ci.org/mukeshsolanki/Android-Shared-Preferences-TinyDB-"> <img src="https://travis-ci.org/mukeshsolanki/Android-Shared-Preferences-TinyDB-.svg?branch=master"></a>
+  <a href="https://www.paypal.me/mukeshsolanki"> <img src="https://img.shields.io/badge/paypal-donate-yellow.svg"></a>
+  <br><br>
+  Based on kcochibili's TinyDB (https://github.com/kcochibili/TinyDB--Android-Shared-Preferences-Turbo). This class simplifies calls to SharedPreferences in a line of code. It can also do more like: saving a list of strings, integers and saving object and lists. All in 1 line of code!
+</p>
+
+<h2>
+<a id="how-to-integrate-into-your-app" class="anchor" href="#how-to-integrate-into-your-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to integrate into your app?</h2>
+
+<p>Integrating the library into you app is extremely easy. A few changes in the build gradle and your all ready to use TinyDB. Make the following changes.</p>
+
+<p>Step 1. Add the JitPack repository to your build file. Add it in your root build.gradle at the end of repositories:</p>
+
+<div class="highlight highlight-source-java"><pre>allprojects {
+  repositories {
+    <span class="pl-c1">...</span>
+    maven { url <span class="pl-s"><span class="pl-pds">"</span>https://jitpack.io<span class="pl-pds">"</span></span> }
+  }
+}</pre></div>
+
+<p>Step 2. Add the dependency</p>
+
+<div class="highlight highlight-source-java"><pre>dependencies {
+        compile <span class="pl-s"><span class="pl-pds">'</span>com.github.mukeshsolanki:Android-Shared-Preferences-TinyDB-:1.0.2<span class="pl-pds">'</span></span>
+}</pre></div>
+
+<h2>
+<a id="how-to-use-the-library" class="anchor" href="#how-to-use-the-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use the library?</h2>
+
+<p>Okay seems like you integrated the library in your project but <strong>how do you use it</strong>? Well its really easy just follow the steps below.</p>
+
+<pre><code> //Create a new instance of TinyDB
+ TinyDB tinyDB=new TinyDB(appContext);
+
+ //use that instance to save data
+
+ tinyDB.putString(key,value); //Save's a string value in your preferences
+ tinyDB.putInt(key,value); //Save's a int value in your preferences
+
+
+ //use that instance to retrieve data
+ tinyDB.getString(key); //retrives the data from preferences or default values if it does not exists 
+ tinyDB.getBoolean(key); //retrives the data from preferences or default values if it does not exists
+</code></pre>
+
+<p>That's pretty much it. Looks like your all done here.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/mukeshsolanki/Android-Shared-Preferences-TinyDB-">Android-shared-preferences-tinydb-</a> is maintained by <a href="https://github.com/mukeshsolanki">mukeshsolanki</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
