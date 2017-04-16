@@ -13,11 +13,9 @@ android:
   - ".+"
 before_script:
 - echo yes | android update sdk --no-ui --all --filter platform-tools,tools
-- echo yes | android update sdk --no-ui --all --filter build-tools-24.0.3
-- echo yes | android update sdk --no-ui --all --filter android-24
+- echo yes | android update sdk --no-ui --all --filter build-tools-25.0.2
+- echo yes | android update sdk --no-ui --all --filter android-25
 script:
 - "./gradlew clean test"
 notifications:
   email: false
-  slack:
-    secure: oHaEf5kLbXbZurE8wPYq2v6kTGdeMql7nycAfb8DTjUjhqm+wdw0EGsqOZVdGcwU91JgR8KlMTHWoeHt5z7HfPuOI729MArO1WpfJeOmve8A1aVabxFyn9U5M3AsJZO8RLOlaXE2ADkHjpgux6i6m72jYzWQrrXFTjVifciAVb/K18hkjr2IvYAvIlpdWlVXMBqPK7d5968r0ndcbuZ6o19wlCmArno4ko8/oWTtsTv8mmcVVZlPX7ZmIzuS1ZAUw/8pjqyyQeFtfcSDSItCyWmZUbFJIJ6X0aSoi2tVcuciYVyie9ecerAe/+p3swhySqx5WYyzmn4PeKh+uqfvCWtFb3uIAzkOhFbR3Cv1pUDsAl9+dhVke23m6qPP9bslwyj4+K93MxZG7CqC7qW7GU0WrNmI7Ex36b/EBWLh+hEea0mntEpnRW1eWKRYwa+kRs/wy30cq053ILp6XnjjLnbkDTE4oCbtGB1FG++ZpujFYnVaNOzW9V4ZMwp9QSit8aQEblBBrAkg5YQH3mWu3x0NGFrIMdO8ZENE6bhS2N0rn7BSN4+aCYzcki38vn5pWnC34j9lOWeUb/H9daQjlLtCM6ePA8398QWep0XqyoXMiTkraoS76h+y468WBBPFBJpKYCiPT+DKru4Sf/FxzQN7C9mpkeO+J8Gfyp2SAl4=
