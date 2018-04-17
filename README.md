@@ -28,7 +28,7 @@ allprojects {
 Step 2. Add the dependency
 ```java
 dependencies {
-        compile 'com.github.mukeshsolanki:Android-Shared-Preferences-TinyDB-:<latest-version>'
+        implementation 'com.github.mukeshsolanki:Android-Shared-Preferences-TinyDB-:<latest-version>'
 }
 ```
 
