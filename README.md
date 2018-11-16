@@ -1,13 +1,21 @@
 <h1 align="center">Android Shared Preferences</h1>
 <p align="center">
-  <a href="https://jitpack.io/#mukeshsolanki/easypreferences"><img src="https://jitpack.io/v/mukeshsolanki/easypreferences/month.svg"/></a>
+  <a class="badge-align" href="https://www.codacy.com/app/mukeshsolanki/easypreferences?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mukeshsolanki/easypreferences&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/eb5b33a5411346469586686376c4a5ac"/></a>
   <a href="https://jitpack.io/#mukeshsolanki/easypreferences"> <img src="https://jitpack.io/v/mukeshsolanki/easypreferences.svg" /></a>
-  <a href="https://travis-ci.org/mukeshsolanki/easypreferences"> <img src="https://travis-ci.org/mukeshsolanki/easypreferences.svg?branch=master" /></a>
-  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
-  <a href="https://www.paypal.me/mukeshsolanki"> <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" /></a>
+   <a href="https://circleci.com/gh/mukeshsolanki/easypreferences/tree/master"> <img src="https://circleci.com/gh/mukeshsolanki/easypreferences/tree/master.svg?style=shield" /></a>
+     <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
   <br /><br />
   A simple easy to use library that helps you quickly store and retrive data from shared preferences
 </p>
+
+# Supporting Android Easy Preferences
+
+Android Easy Preferences is an independent project with ongoing development and support made possible thanks to donations made by [these awesome backers](BACKERS.md#sponsors). If you'd like to join them, please consider:
+
+- [Become a backer or sponsor on Patreon](https://www.patreon.com/mukeshsolanki).
+- [One-time donation via PayPal](https://www.paypal.me/mukeshsolanki)
+
+<a href="https://www.patreon.com/bePatron?c=935498" alt="Become a Patron"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" /></a>
 
 ## How to integrate into your app?
 
@@ -24,6 +32,7 @@ allprojects {
 }
 ```
 Step 2. Add the dependency
+
 ```java
 dependencies {
         implementation 'com.github.mukeshsolanki:easypreferences:<latest-version>'
@@ -33,19 +42,17 @@ dependencies {
 ## How to use the library?
 Okay seems like you integrated the library in your project but **how do you use it**? Well its really easy just follow the steps below.
 
-```
- //Create a new instance of TinyDB
- EasyPrefrences easyPrefrences=new EasyPrefrences(appContext);
+```java
+ //Create a new instance of EasyPreferences
+ val prefs = EasyPrefrences.defaultPrefs(this)
  
  //use that instance to save data
- 
- easyPrefrences.putString(key,value); //Save's a string value in your preferences
- easyPrefrences.putInt(key,value); //Save's a int value in your preferences
- 
+ prefs["TestKey"] = "HelloWorld"; //Save's a string value in your preferences
+ prefs["Key2"] = 1; //Save's a int value in your preferences
  
  //use that instance to retrieve data
- easyPrefrences.getString(key); //retrives the data from preferences or default values if it does not exists
- easyPrefrences.getBoolean(key); //retrives the data from preferences or default values if it does not exists
+ val value: String? = prefs["TestKey"]; //retrives the data from preferences 
+ val defaultVal: Int? = prefs["Key2", 100] //retrives the data from preferences or default values if it does not exists
 ```
 That's pretty much it. Looks like your all done here.
 

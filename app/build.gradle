@@ -1,9 +1,11 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
   compileSdkVersion 27
   defaultConfig {
-    applicationId "com.mukesh.tinydb.example"
+    applicationId "in.madapps.easypreferences.example"
     minSdkVersion 16
     targetSdkVersion 27
     versionCode 1
@@ -21,4 +23,6 @@ dependencies {
   implementation fileTree(include: ['*.jar'], dir: 'libs')
   implementation 'com.android.support:appcompat-v7:27.1.1'
   implementation project(':easypreference')
+  implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
