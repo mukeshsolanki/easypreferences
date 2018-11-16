@@ -1,9 +1,9 @@
 <h1 align="center">Android Shared Preferences</h1>
 <p align="center">
-  <a class="badge-align" href="https://www.codacy.com/app/mukeshsolanki/easypreferences?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mukeshsolanki/easypreferences&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/eb5b33a5411346469586686376c4a5ac"/></a>
+  <a class="badge-align" href="https://www.codacy.com/app/mukeshsolanki/easypreferences?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mukeshsolanki/easypreferences&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/4829a852b0284e91ac2c1394519a5c1e"/></a>
   <a href="https://jitpack.io/#mukeshsolanki/easypreferences"> <img src="https://jitpack.io/v/mukeshsolanki/easypreferences.svg" /></a>
-   <a href="https://circleci.com/gh/mukeshsolanki/easypreferences/tree/master"> <img src="https://circleci.com/gh/mukeshsolanki/easypreferences/tree/master.svg?style=shield" /></a>
-     <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
+  <a href="https://circleci.com/gh/mukeshsolanki/easypreferences/tree/master"> <img src="https://circleci.com/gh/mukeshsolanki/easypreferences/tree/master.svg?style=shield" /></a>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
   <br /><br />
   A simple easy to use library that helps you quickly store and retrive data from shared preferences
 </p>
@@ -12,12 +12,12 @@
 
 Android Easy Preferences is an independent project with ongoing development and support made possible thanks to donations made by [these awesome backers](BACKERS.md#sponsors). If you'd like to join them, please consider:
 
-- [Become a backer or sponsor on Patreon](https://www.patreon.com/mukeshsolanki).
-- [One-time donation via PayPal](https://www.paypal.me/mukeshsolanki)
+  - [Become a backer or sponsor on Patreon](https://www.patreon.com/mukeshsolanki).
+  - [One-time donation via PayPal](https://www.paypal.me/mukeshsolanki)
 
 <a href="https://www.patreon.com/bePatron?c=935498" alt="Become a Patron"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" /></a>
 
-## How to integrate into your app?
+## How to integrate into your app
 
 Integrating the library into you app is extremely easy. A few changes in the build gradle and your all ready to use TinyDB. Make the following changes.
 
@@ -39,7 +39,7 @@ dependencies {
 }
 ```
 
-## How to use the library?
+## How to use the library
 Okay seems like you integrated the library in your project but **how do you use it**? Well its really easy just follow the steps below.
 
 ```java
@@ -62,11 +62,11 @@ Maintained by [Mukesh Solanki](https://www.github.com/mukeshsolanki)
 ## Contribution
 [![GitHub contributors](https://img.shields.io/github/contributors/mukeshsolanki/easypreferences.svg)](https://github.com/mukeshsolanki/easypreferences/graphs/contributors)
 
-* Bug reports and pull requests are welcome.
-* Make sure you use [square/java-code-styles](https://github.com/square/java-code-styles) to format your code.
+  - Bug reports and pull requests are welcome.
+  - Make sure you use [square/java-code-styles](https://github.com/square/java-code-styles) to format your code.
 
 ## License
-```
+```text
 Copyright 2018 Mukesh Solanki
 
 Licensed under the Apache License, Version 2.0 (the "License");
