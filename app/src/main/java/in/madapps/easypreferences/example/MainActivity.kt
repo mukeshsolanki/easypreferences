@@ -1,8 +1,8 @@
 package `in`.madapps.easypreferences.example
 
-import `in`.madapps.prefrences.EasyPrefrences
-import `in`.madapps.prefrences.EasyPrefrences.get
-import `in`.madapps.prefrences.EasyPrefrences.set
+import `in`.madapps.prefrences.EasyPreferences
+import `in`.madapps.prefrences.EasyPreferences.get
+import `in`.madapps.prefrences.EasyPreferences.set
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
-    val prefs = EasyPrefrences.defaultPrefs(this)
+    val prefs = EasyPreferences.defaultPrefs(this)
     prefs["TestKey"] = "HelloWorld"
     val value: String? = prefs["TestKey"]
     Log.d("value=>", value)

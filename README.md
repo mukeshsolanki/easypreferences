@@ -44,7 +44,7 @@ Okay seems like you integrated the library in your project but **how do you use 
 
 ```java
  //Create a new instance of EasyPreferences
- val prefs = EasyPrefrences.defaultPrefs(this)
+ val prefs = EasyPreferences.defaultPrefs(this)
  
  //use that instance to save data
  prefs["TestKey"] = "HelloWorld"; //Save's a string value in your preferences

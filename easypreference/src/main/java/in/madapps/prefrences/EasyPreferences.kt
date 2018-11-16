@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 import android.preference.PreferenceManager
 import android.text.TextUtils
 
-object EasyPrefrences {
+object EasyPreferences {
 
   fun defaultPrefs(context: Context): SharedPreferences =
     PreferenceManager.getDefaultSharedPreferences(context)
