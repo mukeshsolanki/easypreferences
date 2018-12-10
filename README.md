@@ -45,13 +45,13 @@ Okay seems like you integrated the library in your project but **how do you use 
 ```java
  //Create a new instance of EasyPreferences
  val prefs = EasyPreferences.defaultPrefs(this)
- 
+
  //use that instance to save data
  prefs["TestKey"] = "HelloWorld"; //Save's a string value in your preferences
  prefs["Key2"] = 1; //Save's a int value in your preferences
- 
+
  //use that instance to retrieve data
- val value: String? = prefs["TestKey"]; //retrives the data from preferences 
+ val value: String? = prefs["TestKey"]; //retrives the data from preferences
  val defaultVal: Int? = prefs["Key2", 100] //retrives the data from preferences or default values if it does not exists
 ```
 That's pretty much it. Looks like your all done here.
@@ -65,19 +65,27 @@ Maintained by [Mukesh Solanki](https://www.github.com/mukeshsolanki)
   - Bug reports and pull requests are welcome.
   - Make sure you use [square/java-code-styles](https://github.com/square/java-code-styles) to format your code.
 
-## License
-```text
-Copyright 2018 Mukesh Solanki
+  ## License
+  ```
+  MIT License
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+  Copyright (c) 2018 Mukesh Solanki
 
-http://www.apache.org/licenses/LICENSE-2.0
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+  ```
