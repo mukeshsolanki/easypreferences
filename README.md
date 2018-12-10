@@ -1,9 +1,10 @@
 <h1 align="center">Android Shared Preferences</h1>
 <p align="center">
   <a class="badge-align" href="https://www.codacy.com/app/mukeshsolanki/easypreferences?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mukeshsolanki/easypreferences&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/4829a852b0284e91ac2c1394519a5c1e"/></a>
+  <a href="https://jitpack.io/#mukeshsolanki/easypreferences"> <img src="https://jitpack.io/v/mukeshsolanki/easypreferences/month.svg" /></a>
   <a href="https://jitpack.io/#mukeshsolanki/easypreferences"> <img src="https://jitpack.io/v/mukeshsolanki/easypreferences.svg" /></a>
   <a href="https://circleci.com/gh/mukeshsolanki/easypreferences/tree/master"> <img src="https://circleci.com/gh/mukeshsolanki/easypreferences/tree/master.svg?style=shield" /></a>
-  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"/></a>
   <br /><br />
   A simple easy to use library that helps you quickly store and retrive data from shared preferences
 </p>
