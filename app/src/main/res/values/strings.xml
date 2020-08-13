@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">Android-Shared-Preferences</string>
+    <string name="load_from_prefs">Load from Prefs</string>
+  <string name="save_to_prefs">Save to Prefs</string>
 </resources>
